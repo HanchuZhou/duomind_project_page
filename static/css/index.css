@@ -171,7 +171,7 @@ a {
   font-size: clamp(2.35rem, 4.2vw, 4rem);
   letter-spacing: -0.045em;
   line-height: 1.02;
-  margin: 0 auto 0.9rem !important;
+  margin: 0 auto 1.75rem !important;
 }
 
 .title-brand {
@@ -179,12 +179,89 @@ a {
   white-space: nowrap;
 }
 
+.publication-byline {
+  margin-bottom: 4rem;
+}
+
 .publication-authors {
-  color: var(--navy-deep);
+  color: #000;
   font-size: 1.15rem;
   font-weight: 700;
-  letter-spacing: 0.02em;
-  margin-bottom: 4rem;
+  letter-spacing: 0;
+  line-height: 1.35;
+  margin-bottom: 0.4rem;
+}
+
+.author-row,
+.publication-affiliations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25rem 1.25rem;
+}
+
+.author-row {
+  gap: 0.1rem 0.8rem;
+}
+
+.author-row > span,
+.publication-affiliations > span {
+  white-space: nowrap;
+}
+
+.publication-authors a:hover {
+  text-decoration: underline;
+}
+
+.publication-affiliations {
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.publication-byline sup {
+  font-size: 0.7em;
+  margin-left: 0.15em;
+}
+
+.resource-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin: 1.5rem auto 0;
+}
+
+.resource-buttons button {
+  align-items: center;
+  background: var(--navy-deep);
+  border: 1px solid transparent;
+  border-radius: 999px;
+  color: #fff;
+  cursor: default;
+  display: flex;
+  font-size: 0.9rem;
+  font-weight: 700;
+  gap: 0.45rem;
+  justify-content: center;
+  min-width: 8rem;
+  opacity: 1;
+  padding: 0.55rem 1rem;
+}
+
+.resource-buttons svg {
+  flex: none;
+  height: 1.1rem;
+  width: 1.1rem;
+}
+
+.citation-bibtex {
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 1.5rem;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  text-align: left;
 }
 
 .hero-takeaway {
@@ -574,17 +651,17 @@ a {
   max-width: 100%;
 }
 
-.anonymous-footer {
+.project-footer {
   background: var(--navy-deep);
   color: rgb(255 255 255 / 82%);
   padding: 3rem 1.5rem;
 }
 
-.anonymous-footer p {
+.project-footer p {
   margin-bottom: 0.45rem;
 }
 
-.anonymous-footer a {
+.project-footer a {
   color: #9ee3dd;
   text-decoration: underline;
   text-underline-offset: 0.15em;
