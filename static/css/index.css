@@ -231,7 +231,8 @@ a {
   margin: 1.5rem auto 0;
 }
 
-.resource-buttons button {
+.resource-buttons button,
+.resource-buttons a {
   align-items: center;
   background: var(--navy-deep);
   border: 1px solid transparent;
@@ -246,6 +247,10 @@ a {
   min-width: 8rem;
   opacity: 1;
   padding: 0.55rem 1rem;
+}
+
+.resource-buttons a {
+  cursor: pointer;
 }
 
 .resource-buttons svg {
